@@ -1,0 +1,18 @@
+CREATE TABLE cajas(
+    idCaja INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    ip VARCHAR(15)
+);
+
+create table empleados (
+idEmpleado INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(30) NOT NULL,
+apellidoP VARCHAR(30) NOT NULL,
+apellidoMa VARCHAR(30) NOT NULL,
+fechaNacimiento date NOT NULL,
+email VARCHAR(30) NOT NULL,
+telefono VARCHAR(10) NOT NULL,
+salario DECIMAL (8,2) NOT NULL,
+foto VARCHAR (200) NOT NULL,
+idRol TINYINT NOT NULL,
+idEstado TINYINT NOT NULL
+);

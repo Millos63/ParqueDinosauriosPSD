@@ -1,0 +1,18 @@
+<button class="btn btn-primary" routerLink="/cierresCajas/add" >Nuevo reporte de Cierre de Caja</button>
+<div class="col-md-4" *ngFor = "let cierreCaja of cierresCajas">
+    <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between aling-items-center">
+            {{cierreCaja.folio}}
+            <button class="btn btn-danger"> <i class="fa-solid fa-trash" (click)="delete(cierreCaja.folio)"></i></button>
+        </div>
+        <div class="card-body">
+            <p>Elaborado por: {{cierreCaja.idElaboradoPor}}</p>
+            <p>Fecha Apertura: {{cierreCaja.fechaCierre}}</p>
+            <p>Corte de Caja: {{cierreCaja.corteDeCaja}}</p> 
+            <a href="" class="btn btn-primary" [routerLink]="['/cierresCajas/add/', cierreCaja.folio]">Editar</a>
+
+            <!--<a href="" class="btn btn-primary" [routerLink]="['/LandLords/add/', landLord.idLandLord]">Editar</a>-->
+            
+        </div>
+    </div>
+</div>

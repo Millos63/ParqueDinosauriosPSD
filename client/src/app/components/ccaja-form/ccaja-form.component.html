@@ -1,0 +1,42 @@
+<div class="col-md-4-offset-md-2">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input type="text" name="idElaboradoPor" [(ngModel)]="cierreCaja.idElaboradoPor" placeholder="Elaborado por:" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="idAprobadoPor" [(ngModel)]="cierreCaja.idAprobadoPor" placeholder="Aprobado por:" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="idCaja" [(ngModel)]="cierreCaja.idCaja" placeholder="id caja:" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="date" name="fechaCierre" [(ngModel)]="cierreCaja.fechaCierre" placeholder="fecha Cierre:" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="corteDeCaja" [(ngModel)]="cierreCaja.corteDeCaja" placeholder="corte De Caja:" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="idCajero" [(ngModel)]="cierreCaja.idCajero" placeholder="Id Cajero:" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="turno" [(ngModel)]="cierreCaja.turno" placeholder="Turno:" class="form-control" autofocus>
+                </div>
+                <div class="form-group" style="padding-top: 25px;">
+                    <input type="text" name="observaciones" [(ngModel)]="cierreCaja.observaciones" placeholder="Observaciones:  " class="form-control" autofocus>
+                </div>
+                <br>
+                <button class="btn btn-success btn-block" (click)="saveNewAperturaCaja()" routerLink="/cierresCajas">Save</button>
+                <button class="btn btn-success btn-block" (click)="update()" routerLink="/cierresCajas" style="padding-left: 10px;">Update</button>
+            </form>
+        </div>
+    </div>    
+</div>
+
